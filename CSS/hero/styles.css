@@ -1,0 +1,64 @@
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 500px 500px 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    ".Header Header ."
+    ".Photo Title ."
+    ".Photo .ScrollingText1"
+    ".footer .footer";
+
+
+}
+
+/*.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto; 
+  grid-gap: 10px;
+  background-color: green;
+  padding: 10px;
+}*/
+  
+  .grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+
+
+
+.Title{
+    grid-area: Title;
+}
+
+
+.Header{
+    grid-area: Header;
+}
+
+
+.Photo{
+    grid-area: Photo;
+}
+
+
+.ScrollingText1{
+    grid-area: ScrollingText1;
+}
+
+.Footer{
+    grid-area: Footer;
+}
+{
+    margin: 0;
+    Padding: 0;
+}
+
+.about div:nth-child(even){
+    background-color:blue;
+}
+.about div:nth-child(odd) {
+    background-color:green;
+}
